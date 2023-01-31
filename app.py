@@ -1,6 +1,6 @@
 import streamlit as st
 import numpy as np
-from ibm_watson import LanguageTranslatorV3
+from ibm_watson import LanguageTranslatorV4
 from ibm_cloud_sdk_core.authenticators import IAMAuthenticator, authenticator
 
 
@@ -16,7 +16,7 @@ langtranslator = LanguageTranslatorV3(
 
 langtranslator.set_service_url(url)
 
-st.title("Language-Translator")
+st.title("SoloWils-Translator")
 
 # setting up the dropdown list of the languages
 
